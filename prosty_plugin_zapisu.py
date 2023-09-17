@@ -18,12 +18,12 @@ def info(zmienna = False):
     :return: brak
     '''
     if zmienna == True:
-        print("Prosty plugin zapisu")
+        print("Nazwa: Prosty plugin zapisu")
         print("Autor: Dawid Cisiński")
         print("Wersja:1.1")
         return
     else:
-        return "Zapis pro v.1.1"
+        return "Prosty plugin zapisu v.1.1"
 
 def spr_txt():
     global SPR_TXT_AUTO
