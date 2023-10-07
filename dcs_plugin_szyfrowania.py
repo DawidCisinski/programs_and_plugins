@@ -57,24 +57,13 @@ def odszyfruj_tablice(tablica, klucz_szyfrowania):
 
 def szyfruj_tablice_na_str(lista, klucz):
     tekst = ' '.join(lista)
-    szyfr = ""
-    for znak in tekst:
-        kod = ord(znak)
-        kod += klucz
-        nowy_znak = chr(kod)
-        szyfr += nowy_znak
-    return szyfr
+    
 
 
 def odszyfruj_str_na_tablice(tekst, klucz):
-    tekst_jawny = ""
-    for znak in tekst:
-        kod = ord(znak)
-        kod -= klucz
-        nowy_znak = chr(kod)
-        tekst_jawny += nowy_znak
+    
 
-    str = tekst_jawny
+    str = tekst
     if "." in str:
         str = str.replace(".", "")
     str += " "
