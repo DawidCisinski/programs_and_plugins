@@ -165,12 +165,12 @@ def proste_menu_zapisu(lista, rozszerzenie="opensave", folder="ProjektyOpenSave"
     koniec = False
     while True:
         print("")
-        print("# # # # # # # #")
-        print("#  __Menu__   #")
-        print("#  1.Zapisz   #")
-        print("#  2.Wczytaj  #")
-        print("#  3.Wyjdź    #")
-        print("# # # # # # # #")
+        print("# # # # # # #")
+        print("# __Menu__  #")
+        print("# 1.Zapisz  #")
+        print("# 2.Wczytaj #")
+        print("# 3.Wyjdź   #")
+        print("# # # # # # #")
         print("")
         wybor = input("Wybieram: ")
         if wybor == "1":
