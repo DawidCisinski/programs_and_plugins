@@ -1,5 +1,5 @@
 import os
-import random
+#import random
 #import string
 
 def str_na_lista(str):
