@@ -170,7 +170,7 @@ def proste_menu_zapisu(lista, rozszerzenie="opensave", folder="ProjektyOpenSave"
         print("# 2.Wczytaj #")
         print("# 3.Wyjdź   #")
         print("# # # # # # #")
-        print("")
+        print(" ")
         wybor = input("Wybieram: ")
         if wybor == "1":
             os.system("cls")
@@ -193,7 +193,7 @@ def menu(lista):
     print("3.Info   ")
     print("4.Opcje   ")
     print("5.Wyjdź   ")
-    print("")
+    print(" ")
     wybor = input("Wybieram: ").lower()
     print(wybor)
     if wybor == "1" or wybor == "operacje":
