@@ -156,6 +156,10 @@ class Budowniczy:
             return "DCS Plugin zapisu v.2.0"
 # Autor Dawid Cisiński
 
+def lista_print(lista):
+    for index, obiekt in enumerate(lista):
+        print(f"{index + 1}.{obiekt}")
+
 #lista = ["xyz"]
 #lista = dcs_plugin_zapisu.proste_menu_zapisu(lista)
 
@@ -184,6 +188,7 @@ def proste_menu_zapisu(lista, rozszerzenie="opensave", folder="ProjektyOpenSave"
             os.system("cls")
             break
     return koniec
+# Autor Dawid Cisiński
 def menu(lista):
     os.system("cls")
     print("__________")
