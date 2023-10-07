@@ -160,6 +160,7 @@ class Budowniczy:
 #lista = dcs_plugin_zapisu.proste_menu_zapisu(lista)
 
 def proste_menu_zapisu(lista, rozszerzenie="opensave", folder="ProjektyOpenSave"):
+    os.system("cls")
     opacja_zapisu = Budowniczy(rozszerzenie, folder)
     koniec = False
     while True:
@@ -169,6 +170,7 @@ def proste_menu_zapisu(lista, rozszerzenie="opensave", folder="ProjektyOpenSave"
         print("#  2.Wczytaj  #")
         print("#  3.Wyjdź    #")
         print("# # # # # # # #")
+        print("")
         wybor = input("Wybieram: ")
         if wybor == "1":
             os.system("cls")
