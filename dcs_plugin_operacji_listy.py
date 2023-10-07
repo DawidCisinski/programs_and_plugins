@@ -201,4 +201,7 @@ def odszyfruj_tablice(tablica, klucz_szyfrowania):
 def losowy_klucz():
     return random.randint(0, 2 ** 128 - 1)
 
+def szybka_lista_na_str(lista):
+    return ' '.join(lista)
+
 #Dawid Csisiński 
