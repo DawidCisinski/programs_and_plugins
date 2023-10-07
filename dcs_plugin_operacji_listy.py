@@ -25,6 +25,7 @@ def lista_print(lista):
     for index, obiekt in enumerate(lista):
         print(f"{index + 1}.{obiekt}")
 
+
 def info(zmienna = False):
     '''
     wyświetla informacje o programie
@@ -38,6 +39,7 @@ def info(zmienna = False):
         return
     else:
         return "DCS Plugin Operacji Listy v.1.0"
+
 
 def auto_menu(lista_menu):
     os.system("cls")
@@ -58,6 +60,7 @@ def auto_menu(lista_menu):
         return wybor
     else:
         return "error"
+
 
 def menu():
     os.system("cls")
