@@ -164,6 +164,7 @@ def proste_menu_zapisu(lista, rozszerzenie="opensave", folder="ProjektyOpenSave"
     opacja_zapisu = Budowniczy(rozszerzenie, folder)
     koniec = False
     while True:
+        print("")
         print("# # # # # # # #")
         print("#  __Menu__   #")
         print("#  1.Zapisz   #")
@@ -186,6 +187,7 @@ def proste_menu_zapisu(lista, rozszerzenie="opensave", folder="ProjektyOpenSave"
     return koniec
 def menu(lista):
     os.system("cls")
+    print("")
     print("__________")
     print("___Menu___")
     print("1.Operacje")
