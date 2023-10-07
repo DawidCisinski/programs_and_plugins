@@ -184,4 +184,35 @@ def proste_menu_zapisu(lista, rozszerzenie="opensave", folder="ProjektyOpenSave"
             os.system("cls")
             break
     return koniec
+def menu(lista):
+    os.system("cls")
+    print("__________")
+    print("___Menu___")
+    print("1.Operacje")
+    print("2.Plik  ")
+    print("3.Info   ")
+    print("4.Opcje   ")
+    print("5.Wyjdź   ")
+    print("")
+    wybor = input("Wybieram: ").lower()
+    print(wybor)
+    if wybor == "1" or wybor == "operacje":
+        os.system("cls")
+        return 1
+    elif wybor == "2" or wybor == "plik":
+        os.system("cls")
+        lista = proste_menu_zapisu(lista)
+        return lista   
+    elif wybor == "3" or wybor == "info":
+        os.system("cls")
+        return 2
+    elif wybor == "4" or wybor == "opcje":
+        os.system("cls")
+        return 3
+    elif wybor == "5" or wybor == "wyjdź" or wybor == "wyjdz":
+        os.system("cls")
+        return 4
+    else:
+        os.system("cls")
+        return False
 # Autor Dawid Cisiński
