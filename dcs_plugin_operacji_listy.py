@@ -39,6 +39,26 @@ def info(zmienna = False):
     else:
         return "DCS Plugin Operacji Listy v.1.0"
 
+def auto_menu(lista_menu):
+    os.system("cls")
+    liczby = []
+    print("Menu:")
+    for index, obiekt in enumerate(lista_menu):
+        a = index + 1
+        print(f"{a}.{obiekt}")
+        liczby.append(str(a))
+    print("")
+    wybor = input("Wybieram: ").lower()
+    if wybor.isalpha():
+        if wybor in lista_menu:
+           return lista_menu.index(wybor) + 1
+        else:
+            return "error"
+    elif wybor in liczby:
+        return wybor
+    else:
+        return "error"
+
 def menu():
     os.system("cls")
     print("__________")
