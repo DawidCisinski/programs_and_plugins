@@ -150,10 +150,10 @@ class Budowniczy:
             os.system("cls")
             print("Nazwa: DCS Plugin zapisu")
             print("Autor: Dawid Cisiński")
-            print("Wersja:2.0")
+            print("Wersja:2.1")
         else:
             os.system("cls")
-            return "DCS Plugin zapisu v.2.0"
+            return "DCS Plugin zapisu v.2.1"
 # Autor Dawid Cisiński
 
 def lista_print(lista):
