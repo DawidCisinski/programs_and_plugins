@@ -25,6 +25,19 @@ def lista_print(lista):
     for index, obiekt in enumerate(lista):
         print(f"{index + 1}.{obiekt}")
 
+def info(zmienna = False):
+    '''
+    wyświetla informacje o programie
+    :param zmienna: zmienia typ informacji dla True (dokładniejsze)
+    :return: brak
+    '''
+    if zmienna == True:
+        print("Nazwa: DCS Plugin Operacji Listy")
+        print("Autor: Dawid Cisiński")
+        print("Wersja:1.0")
+        return
+    else:
+        return "DCS Plugin Operacji Listy v.1.0"
 
 def menu():
     os.system("cls")
@@ -124,3 +137,4 @@ def zamien_na_liscie(nazwa, nazwa2, lista):
     lista[nazwa] = lista[nazwa2]
     lista[nazwa2] = tmp
     return lista
+#Dawid Csisiński 
