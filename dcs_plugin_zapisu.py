@@ -140,7 +140,7 @@ class Budowniczy:
         os.system("cls")
         return True
 
-    def info(self, zmienna=False):
+def info(zmienna=False):
         '''
         wyświetla informacje o programie
         :param zmienna: zmienia typ informacji dla True (dokładniejsze)
@@ -153,7 +153,8 @@ class Budowniczy:
             print("Wersja:2.1")
         else:
             os.system("cls")
-            return "DCS Plugin zapisu v.2.1"
+            return "DCS Plugin zapisu v.2.2"
+
 # Autor Dawid Cisiński
 
 #lista = ["xyz"]
