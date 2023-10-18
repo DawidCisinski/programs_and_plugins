@@ -1,6 +1,4 @@
 import os
-#import random
-#import string
 
 def str_na_lista(str):
     if "." in str:
