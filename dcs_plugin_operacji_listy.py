@@ -1,23 +1,13 @@
 import os
 
-def str_na_lista(str):
-    if "." in str:
-        str = str.replace(".", "")
-    str += " "
-    slowa = []
-    miejsce = 0
-    for index, i in enumerate(str):
-        if i == " ":
-            slowa.append(str[miejsce:index])
-            miejsce = index + 1
-    return slowa
+def str_na_liste(str):
+  lista = str.split("<SEPARATE>")
+  return lista
 
 
-def lista_na_str(lista, separator):
-    str = ""
-    for index, i in enumerate(lista):
-        str = str + separator + i
-    return str[1:]
+def lista_na_str(lista):
+  str = "<SEPARATE>".join(lista)
+  return str
 
 
 def lista_print(lista):
