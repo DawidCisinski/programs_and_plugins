@@ -54,5 +54,14 @@ def odszyfruj_tablice(tablica, klucz_szyfrowania):
 
 #Dawid Cisiński
 
+def str_na_liste(str):
+  lista = str.split("<SEPARATE>")
+  return lista
+
+
+def lista_na_str(lista):
+  str = "<SEPARATE>".join(lista)
+  return str
+    
 #Dawid Csisiński
 
