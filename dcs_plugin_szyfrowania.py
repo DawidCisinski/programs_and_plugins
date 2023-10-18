@@ -3,9 +3,6 @@ import random
 def losowy_klucz():
     return random.randint(0, 2 ** 128 - 1)
 
-def losowy_klucz_prosty():
-    return random.randint(0, 2 ** 10 - 1)
-
 def info(zmienna = False):
     '''
     wyświetla informacje o programie
@@ -55,25 +52,7 @@ def odszyfruj_tablice(tablica, klucz_szyfrowania):
 
     return odszyfrowana_tablica
 
-def szyfruj_tablice_na_str(lista, klucz):
-    tekst = ' '.join(lista)
-    
-
-
-def odszyfruj_str_na_tablice(tekst, klucz):
-    
-
-    str = tekst
-    if "." in str:
-        str = str.replace(".", "")
-    str += " "
-    tablica = []
-    miejsce = 0
-    for index, i in enumerate(str):
-        if i == " ":
-            tablica.append(str[miejsce:index])
-            miejsce = index + 1
-    return tablica
+#Dawid Cisiński
 
 #Dawid Csisiński
 
