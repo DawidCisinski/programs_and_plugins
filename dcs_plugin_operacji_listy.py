@@ -1,12 +1,12 @@
 import os
 
 def str_na_liste(str):
-  lista = str.split("<SEPARATE>")
+  lista = str.split("<SEP!>")
   return lista
 
 
 def lista_na_str(lista):
-  str = "<SEPARATE>".join(lista)
+  str = "<SEP!>".join(lista)
   return str
 
 
