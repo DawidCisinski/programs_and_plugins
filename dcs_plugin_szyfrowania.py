@@ -1,5 +1,11 @@
 import random
 
+def losowy_klucz_sp(dlugosc_klucza):
+    liczba = ""
+    for i in range(dlugosc_klucza):
+        liczba += str(random.randrange(10))
+    return int(liczba)
+
 def losowy_klucz():
     return random.randint(0, 2 ** 128 - 1)
 
