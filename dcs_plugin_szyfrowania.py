@@ -17,7 +17,10 @@ def info(zmienna = False):
     else:
         return "DCS Plugin Szyfrowania v.1.0"
 
-def szyfruj_tablice(tablica, klucz_szyfrowania):
+def szyfruj_tablice(tablica_, klucz_szyfrowania):
+    tablica = []
+    tablica.append(str(tablica_))
+    print(tablica)
     kod_szyfrowania = ""
     while klucz_szyfrowania > 0:
         kod_szyfrowania += chr(klucz_szyfrowania % 256)
@@ -49,8 +52,10 @@ def odszyfruj_tablice(tablica, klucz_szyfrowania):
             odszyfrowany_znak = chr(ord(element[i]) ^ ord(kod_szyfrowania[i % 16]))
             odszyfrowany_element += odszyfrowany_znak
         odszyfrowana_tablica.append(odszyfrowany_element)
+    wynik = odszyfrowana_tablica[0]
+    
+    return eval(wynik)
 
-    return odszyfrowana_tablica
 
 #Dawid Cisiński
 
