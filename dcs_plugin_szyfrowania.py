@@ -2,7 +2,8 @@ import random
 
 def losowy_klucz_sp(dlugosc_klucza):
     liczba = ""
-    for i in range(dlugosc_klucza):
+    liczba += str(random.randrange(1, 10))
+    for i in range(dlugosc_klucza - 1):
         liczba += str(random.randrange(10))
     return int(liczba)
 
