@@ -6,6 +6,7 @@ def str_na_liste(str, id = False):
     lista.insert(0,id)
   return lista
 
+#lista.insert(0,id)
 
 def lista_na_str(lista):
   str = "<SEP!>".join(lista)
@@ -26,10 +27,10 @@ def info(zmienna = False):
     if zmienna == True:
         print("Nazwa: DCS Plugin Operacji Listy")
         print("Autor: Dawid Cisiński")
-        print("Wersja:1.0")
+        print("Wersja:2.0")
         return
     else:
-        return "DCS Plugin Operacji Listy v.1.0"
+        return "DCS Plugin Operacji Listy v.2.0"
 
 
 def auto_menu(lista_menu):
