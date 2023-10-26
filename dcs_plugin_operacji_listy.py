@@ -1,7 +1,9 @@
 import os
 
-def str_na_liste(str):
+def str_na_liste(str, id = False):
   lista = str.split("<SEP!>")
+  if id is not False:
+    lista.insert(0,id)
   return lista
 
 
