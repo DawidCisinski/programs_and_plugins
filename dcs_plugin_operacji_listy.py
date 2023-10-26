@@ -152,7 +152,21 @@ def zamien_na_liscie(nazwa, nazwa2, lista):
     lista[nazwa2] = tmp
     return lista
 
+#Dawid Csisiński 
+
 def szybka_lista_na_str(lista):
     return ' '.join(lista)
+
+
+def wyszukaj_id_na_liscie(lista, id):
+  for index, element in enumerate(lista):
+    if element[0] == id:
+      return index
+
+
+def ostatnie_id_na_liscie(lista):
+  return lista[-1][0]
+
+#len(lista)
 
 #Dawid Csisiński 
