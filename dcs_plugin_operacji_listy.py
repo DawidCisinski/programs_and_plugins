@@ -190,3 +190,20 @@ def wartosc_slownika(str, slownik):
         return slownik[str]
 
 #Dawid Csisiński 
+
+
+def sprawdz(x,y,lista):
+    for i in reversed(lista):
+        if i[0] == y + 1 and i[1] == x + 1:
+            return i[2]
+
+def ekran(X = 8, Y = 8, lista = [[5,2,"G"],[5,2,"A"],[5,1,"C"]]):
+
+    for index in range(Y):
+        for index2 in range(X):
+            a = sprawdz(index, index2, lista)
+            if type(a) == str:
+                print(f"{a}", end=" ")
+            else:
+                print("X", end=" ")
+        print("")
