@@ -16,16 +16,20 @@ def dcs_cmd(grogcom_info = "info_komend"):
       lista = ["send"]
       if len(wybor) > 1:
         if wybor[1] == "str":
-          return lista.append(wybor[2])
+          lista.append(wybor[2])
+          return lista
         elif wybor[1] == "int":
-          return lista.append(int(wybor[2]))
+          lista.append(int(wybor[2]))
+          return lista
         elif wybor[1] == "float":
-          return lista.append(float(wybor[2].replace(",", ".")))
+          lista.append(float(wybor[2].replace(",", ".")))
+          return lista
         elif wybor[1] == "list" or wybor[1] == "bool":
-          return lista.append(eval(wybor[2]))
+          lista.append(eval(wybor[2]))
+          return lista
 
     elif wybor[0] == "exit":
-      return None
+      return True
 
     elif wybor[0] == "progcom":
       if len(wybor) > 1:
