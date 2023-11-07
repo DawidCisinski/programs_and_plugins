@@ -170,4 +170,13 @@ def ostatnie_id_na_liscie(lista):
 
 #len(lista)
 
+#config = {
+#    "opcja1":"war1",
+#    "opcja2":"war2",
+#    "opcja3":"war3",
+#}
+#a = config.items()
+#b = list(a)[0][1]
+#print(b)
+
 #Dawid Csisiński 
