@@ -179,4 +179,7 @@ def ostatnie_id_na_liscie(lista):
 #b = list(a)[0][1]
 #print(b)
 
+#del slownik[“wiek”]
+#slownik[“imie”] = “Anna”
+
 #Dawid Csisiński 
