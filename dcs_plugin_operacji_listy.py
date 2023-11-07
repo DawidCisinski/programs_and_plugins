@@ -185,4 +185,8 @@ def ostatnie_id_na_liscie(lista):
 #del slownik[“wiek”]
 #slownik[“imie”] = “Anna”
 
+def wartosc_slownika(str, slownik):
+    if str in slownik:
+        return slownik[str]
+
 #Dawid Csisiński 
