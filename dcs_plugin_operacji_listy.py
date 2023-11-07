@@ -175,6 +175,7 @@ def ostatnie_id_na_liscie(lista):
 #    "opcja2":"war2",
 #    "opcja3":"war3",
 #}
+#print(config["opcja1"])
 #a = config.items()
 #b = list(a)[0][1]
 #print(b)
